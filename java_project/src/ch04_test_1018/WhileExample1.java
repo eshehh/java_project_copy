@@ -6,7 +6,7 @@ public class WhileExample1 {
 		int num = 1;
 		int sum = 0;
 		
-		while(num <= 5){
+		while(num <= 10){
 			sum += num;
 			num++;
 		}

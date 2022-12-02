@@ -3,19 +3,23 @@ package ch04_test_1018;
 public class SwitchCase {
 	public static void main(String[] args) {
 
-		int ranking = 1;
+		int ranking = 4;
+		String medal = "Sliver";
 		char medalColor;
 		
-		switch(ranking){
+		switch(medal){
 		
-			case 1: medalColor = 'G';
-				break;
+			case "Gold": medalColor = 'G';
+			ranking = 1;
+						 break;
 				
-			case 2: medalColor = 'S';
-				break;
+			case "Sliver": medalColor = 'S';
+			ranking = 2;
+						   break;
 			
-			case 3: medalColor = 'B';
-				break;
+			case "Bronze": medalColor = 'B';
+			ranking = 3;
+						   break;
 			default:
 				medalColor = 'A';
 		}

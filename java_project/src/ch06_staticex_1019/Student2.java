@@ -23,7 +23,7 @@ public class Student2 {
 
 	public static int getSerialNum() {
 		int i = 10;
-		//studentName = "aaa";   //���� ��
+		// studentName = "aaa";   //���� ��
 		return serialNum;
 	}
 

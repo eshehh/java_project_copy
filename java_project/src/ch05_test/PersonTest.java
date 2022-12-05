@@ -25,6 +25,7 @@ public class PersonTest {
 		  lsy2.weight= 75F;
 		  lsy2.showInfo();
 		  
+		  
 //		  매개변수가 3개인 생성자를 호출. 
 		  Person lsy3 = new Person("이상용",171F,75F);
 		  lsy3.showInfo();

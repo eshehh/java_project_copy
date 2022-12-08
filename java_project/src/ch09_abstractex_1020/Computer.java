@@ -1,4 +1,4 @@
-package ch9_abstractex_1020;
+package ch09_abstractex_1020;
 
 public abstract  class Computer { // 추상클래스입니다.
 

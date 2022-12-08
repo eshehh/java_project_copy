@@ -7,7 +7,7 @@ public interface Calc {
 	double PI = 3.14;
 	int ERROR = -999999999;
 	
-	// 컴파일로 변할 때, 추사 메서드로 변경된다. 
+	// 컴파일로 변할 때, 추상 메서드로 변경된다. 
 	int add(int num1, int num2);
 	int substract(int num1, int num2);
 	int times(int num1, int num2);

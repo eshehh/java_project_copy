@@ -26,6 +26,14 @@ public class MainBoard {
 		// 다형성 예졔 ) .. 부모클래스형(타입) level ;
 		// 	level= new BeginnerLevel(); 사용 했습니다. 
 		
+		//추가하기
+		// SuperLevel 다음 단계 : UltraLevel 만들기.
+		// 추상 클래스인 PlayerLevel 상속 받고,
+		// 기능을 구현하는데 . 구현 내용은 각자 알아서 좋게 작성.
+		// 해당 레벨은 4라고 합니다
+		// Player 클래스에 있는 각 메서드 구현
+		
+		
 		
 		Player player = new Player();
 		player.play(1);
@@ -35,6 +43,9 @@ public class MainBoard {
 		SuperLevel sLevel = new SuperLevel();
 		player.upgradeLevel(sLevel);
 		player.play(3);
-		
+		UltraLevel uLevel = new UltraLevel();
+		player.upgradeLevel(uLevel);
+		player.play(4);
+		player.useUltimateSkill(new UltimateSkill("울트라스킬", 5, "전역범위"));
 	}
 }

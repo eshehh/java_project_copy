@@ -9,7 +9,8 @@ public class StringEquals {
 		
 		System.out.println("str1 의 참조형 변수의 메모리 주소값 : " + str1);
 		System.out.println("str2 의 참조형 변수의 메모리 주소값 : " + str2);
-		System.out.println(str1 == str2);  // 두 스트링 인스턴스의 주소 값은 다름
+		System.out.println("str1 == str2 ->");
+		System.out.println(str1 == str2);  // 두 스트링 인스턴스의 주소 값은 다름"
 		System.out.println(str1.equals(str2)); // String 클래스의 equals 메소드가 재정의 됨
 		
 		Integer i1 = new Integer(100);

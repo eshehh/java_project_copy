@@ -1,6 +1,7 @@
 package ch11_object_1021;
 
-class Book{
+class Book{ // 암묵적으로 무엇을 상속을 받고 있죠? Object
+	
 	
 	int bookNumber;
 	String bookTitle;
@@ -13,7 +14,7 @@ class Book{
 	@Override
 	public String toString() {
 		
-		return bookTitle + "," + bookNumber;
+		return "책제목 : " + bookTitle + "," + "책번호 : "  + bookNumber;
 	}
 	
 }

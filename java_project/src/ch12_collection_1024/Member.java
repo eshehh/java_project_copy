@@ -48,7 +48,7 @@ public class Member implements Comparable<Member>{
 	@Override
 	public int compareTo(Member member) {
 		
-		return (this.memberId - member.memberId);   //오름차순
-		//return (this.memberId - member.memberId) *  (-1);   //내림 차순
+//		return (this.memberId - member.memberId);   //오름차순
+		return (this.memberId - member.memberId) *  (-1);   //내림 차순
 	}
 }

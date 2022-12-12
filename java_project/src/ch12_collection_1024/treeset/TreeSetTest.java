@@ -7,9 +7,10 @@ public class TreeSetTest {
 	public static void main(String[] args) {
 
 		TreeSet<String> treeSet = new TreeSet<String>();
-		treeSet.add("ȫ�浿");
-		treeSet.add("������");
-		treeSet.add("�̼���");
+		treeSet.add("이상용3");
+		treeSet.add("이상용1");
+		treeSet.add("이상용2");
+		treeSet.add("이상용2");
 		
 		for(String str : treeSet) {
 			System.out.println(str);

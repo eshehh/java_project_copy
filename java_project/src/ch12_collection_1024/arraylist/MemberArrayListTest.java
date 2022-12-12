@@ -17,6 +17,7 @@ public class MemberArrayListTest {
 		Member memberPark = new Member(1003, "박서훤");
 		Member memberHong = new Member(1004, "홍길동");
 		Member lsy = new Member(1005, "이상용");
+		Member bsh = new Member(1006, "배선한");
 		
 		// 해당 Member 를 memberArrayList 에 담고. 
 		memberArrayList.addMember(memberLee);
@@ -24,11 +25,12 @@ public class MemberArrayListTest {
 		memberArrayList.addMember(memberPark);
 		memberArrayList.addMember(memberHong);
 		memberArrayList.addMember(lsy);
+		memberArrayList.addMember(bsh);
 		
 		// memberArrayList 메서드들 확인. 
 		memberArrayList.showAllMember();
 		
-		memberArrayList.removeMember(lsy.getMemberId());
+		memberArrayList.removeMember(bsh.getMemberId());
 		memberArrayList.showAllMember();
 	}
 }

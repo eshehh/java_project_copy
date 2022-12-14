@@ -15,7 +15,7 @@ public class FileInputStreamTest2 {
 		//FileInputStream(클래스) -> InputStream (클래스)-> Closeable (인터페이스) -> AutoCloseable (인터페이스)
 		try(FileInputStream fis = new FileInputStream("input.txt")){ 
 			int i;
-			while ( (i = fis.read()) != -1){
+			while ( (i = fis.read()) != -1){ //-1 해당 읽은 파일 내용이 없으면 반환. -1이 아니다, 그러면 내용이 있다는 이야기. 파일 내용이 있는동안 계속 읽어서, 출력 하겠다는 의미
 				System.out.println((char)i);
 			}
 			System.out.println("end");

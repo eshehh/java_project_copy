@@ -1,7 +1,7 @@
 package ch13_innerclass_1024;
 
 class Outter2{
-	
+	// 1 익명 클래스 선언만
 	Runnable getRunnable(int i){
 
 		int num = 100;
@@ -17,7 +17,7 @@ class Outter2{
 			}
 		};
 	}
-	
+	//2 익명 클래스를 선언과 동시에 할당했음
 	Runnable runner = new Runnable() {
 		
 		@Override

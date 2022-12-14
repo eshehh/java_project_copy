@@ -14,12 +14,12 @@ public class ArrayListStreamTest {
 		sList.add("Jack");
 		
 		Stream<String> stream = sList.stream();
-		stream.forEach(s->System.out.print(s + " "));
+		stream.forEach(s->System.out.print("1"+s + " "));
 		System.out.println();
 		
-		sList.stream().sorted().forEach(s->System.out.print(s+ " "));
-		sList.stream().map(s->s.length()>=5).forEach(n->System.out.println(n));
-		sList.stream().filter(s->s.length() >= 5).forEach(s->System.out.println(s));
+		sList.stream().sorted().forEach(s->System.out.print("2"+s+ " "));
+		sList.stream().map(s->s.length()>=5).forEach(n->System.out.println("3"+n));
+		sList.stream().filter(s->s.length() >= 5).forEach(s->System.out.println("4"+s));
 		
 	}
 }

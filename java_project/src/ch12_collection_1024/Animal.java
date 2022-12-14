@@ -25,7 +25,7 @@ public class Animal implements Comparable<Animal>{
 	
 	@Override
 	public String toString(){   //toString 메소드 오버로딩
-		return animalName + " 회원님의 아이디는 " + animalId + "입니다";
+		return animalName + "의 아이디는 " + animalId + "입니다";
 	}
 
 	@Override

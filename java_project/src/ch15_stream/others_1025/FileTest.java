@@ -7,8 +7,11 @@ public class FileTest {
 
 	public static void main(String[] args) throws IOException {
 
+//		C:\JAVA_workspace2\exercise : 절대경로
+		// . 점은 현재위치, ./ : 현재 폴더를 기준으로 하위.
+		// .. 부모 폴더 : 상대경로
 //		File file = new File("C:\\Temp\\newFile.txt");
-		File file = new File("C:\\Java_Workspace\\Java_EX\\src\\ch15_stream\\others_1025\\newFile.txt");
+		File file = new File("C:\\JAVA_workspace2\\exercise\\newFile.txt");
 		file.createNewFile();
 		
 		System.out.println(file.isFile());

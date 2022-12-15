@@ -47,7 +47,7 @@ class Person implements Serializable{
 
 	private static final long serialVersionUID = -3028089185941809820L;
 	String name;
-	transient String job;
+	transient String job; // transient : 직렬화 대상에서 제외 해주세요.
 	
 	
 	public Person() {}

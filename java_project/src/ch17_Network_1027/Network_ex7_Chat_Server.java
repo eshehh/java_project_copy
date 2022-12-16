@@ -52,7 +52,7 @@ public class Network_ex7_Chat_Server extends Thread implements ActionListener {
 	public void service() {
 		try {
 			ta.append("서비스 하기 위해 준비중..\n");
-			s = new ServerSocket(22334);
+			s = new ServerSocket(11223);
 			// 5432 포트 번호를 가진 ServerSocket 클래스의 객체를 생성한다.
 
 			ta.append("클라이언트 접속 대기중..");

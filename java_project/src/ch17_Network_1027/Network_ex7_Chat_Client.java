@@ -66,7 +66,7 @@ public class Network_ex7_Chat_Client extends Thread implements ActionListener {
 
 	public void service() {
 		try {
-			s1 = new Socket("127.0.0.1", 22334);
+			s1 = new Socket("10.100.104.27", 11223);
 			// 서버의 IP 주소와 5432 포트 번호를 가진
 			// Socket 클래스의 객체를 생성한다.
 

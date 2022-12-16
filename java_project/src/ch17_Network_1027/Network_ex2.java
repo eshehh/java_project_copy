@@ -11,7 +11,7 @@ public class Network_ex2 {
 
 		BufferedReader buffer = null;
 		try {
-			URL url = new URL("http://www.google.com");
+			URL url = new URL("http://www.nate.com");
 //요청한 도메인의 위치를 얻기 위해서 해당 
 //도메인을 인자로 하여 URL 객체를 생성한다. 
 

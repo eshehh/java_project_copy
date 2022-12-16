@@ -9,7 +9,8 @@ public class Network_ex6_2 {
 	public static void main(String[] args) {
 
 		try {
-			Socket s1 = new Socket("10.100.102.21", 11223);//10.100.102.21 
+			// 클라이언트들은 접속할 서버의 주소와 포트를 입력합시다
+			Socket s1 = new Socket("10.100.104.27", 11223);//10.100.102.21 
 //서버 ip 주소와 5432 포트를 이용한 Socket 클래스를 생성한다.
 
 			InputStream is = s1.getInputStream();

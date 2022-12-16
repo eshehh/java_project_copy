@@ -12,6 +12,7 @@ public class Network_ex6 {
 //ServerSocket 클래스를 생성한다. 
 
 		try {
+			//클라이언트들이 접근 하기 위한 해당 포트 번호 : 11223
 			s = new ServerSocket(11223);
 		} catch (Exception e) {
 			e.printStackTrace();

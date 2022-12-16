@@ -6,7 +6,7 @@ public class Network_ex3 {
 
 	public static void main(String[] args) {
 		try {
-			URL url = new URL("http://www.google.co.kr/index.html");
+			URL url = new URL("http://www.bscoding.ga/index.html");
 //요청한 도메인의 위치를 얻기 위해서, 해당 도메인을 인자로 하여 
 //URL 객체를 생성한다. 
 

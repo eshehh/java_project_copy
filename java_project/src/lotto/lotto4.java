@@ -21,13 +21,18 @@ public class lotto4 extends JFrame {
 		
 		JPanel northPanel = new JPanel();
 		JPanel southPanel = new JPanel();
+		northPanel.setBackground(Color.orange);
+		southPanel.setBackground(Color.orange);
+		
 		
 		JTextArea text = new JTextArea();
+		text.setBackground(Color.orange);
 		JScrollPane textPanel = new JScrollPane(text);
 		
 		
-		JButton[] num = new JButton[5];
+		JButton[] num = new JButton[6];
 		JPanel numPane = new JPanel();
+		numPane.setBackground(Color.orange);
 		numPane.setLayout(new GridLayout(1, 6, 10, 0));
 		for(int i = 0; i < num.length; i++) {
 			num[i] = new JButton(" ");
@@ -60,7 +65,7 @@ public class lotto4 extends JFrame {
 			ArrayList<String> lottoNum = new ArrayList<>();
 			
 			int i = 0;
-			while(i < 5) {
+			while(i < 6) {
 				Integer temp = (int)(Math.random() * 10);
 				String element;
 				if(temp < 10) {

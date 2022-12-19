@@ -13,22 +13,39 @@ public class CardExample {
 
 		computer.getCard(deck); // PC 카드 수령
 		player.getCard(deck); // 플레이어 카드 수령
-		player.setCoin(30); // 플레이어 코인 30개 지급
+		player.setCoin(40); // 플레이어 코인 40개 지급
+		computer.setCoin(40);
 		RuleExplain.explain(); // 룰 설명
 		while (round < 21) { // 게임시작
 			int com = computer.getCard(); // PC가 가져온 카드 1개
 			int play = player.getCard(); // 플레이어가 가져온 카드 1개
 			if (player.getCoin() < 1) {
 				System.out.println("┌===========================================┐");
-				System.out.println("│　====게임에서 패배하셨습니다. 다음에 또 도전하세요!=====　│");
+				System.out.println("│　====게임에서 패배하셨습니다. 다음에 또 도전하세요!=====│");
 				System.out.println("└===========================================┘");
 				System.exit(0);
 			} else if(player.getCoin()>99) {
 				System.out.println("┌===========================================┐");
-				System.out.println("│　====게임에서 승리하셨습니다. 다음에 또 도전하세요!=====　│");
+				System.out.println("│　====게임에서 승리하셨습니다. 다음에 또 도전하세요!=====│");
 				System.out.println("└===========================================┘");
 				System.exit(0);
-			}else {
+			}
+			else if(round == 20) {
+				if (player.getCoin() > computer.getCoin()) {
+					
+				System.out.println("┌===========================================┐");
+				System.out.println("│　====게임에서 승리하셨습니다. 다음에 또 도전하세요!=====│");
+				System.out.println("└===========================================┘");
+				System.exit(0);
+				}
+			else if (player.getCoin() < computer.getCoin()) {
+				System.out.println("┌===========================================┐");
+				System.out.println("│　====게임에서 패배하셨습니다. 다음에 또 도전하세요!=====│");
+				System.out.println("└===========================================┘");
+				System.exit(0);
+			 }
+			}
+			else {
 				System.out.println("");
 				computer.pcCardShow();
 				player.playerCardShow();
@@ -68,9 +85,17 @@ public class CardExample {
 						}
 					}
 				} else if (choice == 2) {
-					System.out.println("베팅을 포기하셨습니다. 코인 한 개가 줄어들고 새 라운드를 시작합니다.");
-					System.out.println("플레이어의 카드는 [" +play + "] 였습니다.");
-					player.minusCoin();
+					
+					if (play == 10) {
+						
+						System.out.println("카드 숫자가 10개인데 베팅을 포기하셨습니다. 페널티로 코인 7개가 차감됩니다.");
+						player.minusCoin1(0);
+					} 
+					else {
+						System.out.println("베팅을 포기하셨습니다. 코인 한 개가 줄어들고 새 라운드를 시작합니다.");
+						System.out.println("플레이어의 카드는 [" +play + "] 였습니다.");
+						player.minusCoin();
+					}
 				}
 				round++;
 			}

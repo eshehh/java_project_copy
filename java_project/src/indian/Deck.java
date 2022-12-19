@@ -16,14 +16,15 @@ public class Deck {
 
 	}
 
+	
 	public void shuffle() {
 		Collections.shuffle(cardList);
 	}
-
 	public Integer deal() {
 		shuffle();
 		return cardList.remove(0);
 
 	}
+	
 
 }
